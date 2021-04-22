@@ -1,8 +1,7 @@
-# Article name here
+# What is a CDK App - Complete Guide
 
 A repository for an article on
-[bobbyhadz.com](https://bobbyhadz.com/blog/aws-s3-presigned-url-react)
-`<- Update Link`
+[bobbyhadz.com](https://bobbyhadz.com/blog/aws-cdk-app)
 
 ## How to Use
 
@@ -17,7 +16,9 @@ npm install
 3. Create the CDK stack
 
 ```bash
-npx cdk deploy
+npx cdk deploy \
+  cdk-stack-dev \
+  cdk-stack-prod
 ```
 
 4. Open the AWS CloudFormation Console and the stack should be created in your
@@ -26,5 +27,7 @@ npx cdk deploy
 5. Cleanup
 
 ```bash
-npx cdk destroy
+npx cdk destroy \
+  cdk-stack-dev \
+  cdk-stack-prod
 ```
